@@ -29,31 +29,31 @@
 <main> <!--Huvudinnehåll-->
 Admin sida
 
-<br>
-<table>
-                <tr>
-                    <th>Användarnamn</th>
-                    <th>Förstanamn</th>
-                    <th>Efternamn</th>
-                    <th>Adress</th>
-                    <th>Postkod</th>
-                    <th>Stad</th>
-                    <th>Telefonnummer</th>
-                </tr>
-                <tr>
-                    <?php
-                        echo <<<TR
-                            <td>{$row['username']}</td>
-                            <td>{$row['firstname']}</td>
-                            <td>{$row['lastname']}</td>
-                            <td>{$row['adress']}</td>
-                            <td>{$row['zip']}</td>
-                            <td>{$row['city']}</td>
-                            <td>{$row['phone']}</td>
+	<br>
+		<table>
+            <tr>
+                <th>Användarnamn</th>
+                <th>Förstanamn</th>
+                <th>Efternamn</th>
+                <th>Adress</th>
+                <th>Postkod</th>
+                <th>Stad</th>
+                <th>Telefonnummer</th>
+            </tr>
+            <tr>
+                <?php
+                    echo<<<TR
+                        <td>{$row['username']}</td>
+                        <td>{$row['firstname']}</td>
+                        <td>{$row['lastname']}</td>
+                        <td>{$row['adress']}</td>
+                        <td>{$row['zip']}</td>
+                        <td>{$row['city']}</td>
+                        <td>{$row['phone']}</td>
 TR;
-                    ?>
-                </tr>
-            </table>
+                ?>
+            </tr>
+        </table>
 </main>
 
 <?php
